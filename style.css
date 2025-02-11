@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('assests/images/background-image.jpg') center/cover no-repeat;
+}
+
+#calculator{
+    height: 80vh;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 50px 5px #000;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#display{
+    width: 20vw;
+    height: 12vh;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 35px;
+    font-size: 10.5vh;
+    box-shadow: 0 0 20px 1px #000;
+    background-color: #f0f0f0;
+}
+
+#display:hover{
+    cursor: text;
+}
+
+.buttons{
+    width: 20vw;
+    display: grid;
+    grid-template-rows: 5;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 20px;
+}
+
+.orange{
+    background-color: #f99154;
+}
+
+.orange:hover{
+    background-color: #f78745;
+}
+
+.gray{
+    background-color: #dde5e6;
+    color: #000;
+}
+
+.gray:hover{
+    background-color: #eaf3f5;
+}
+
+.orangish-white{
+    background-color: #fed6bd;
+    color: #000;
+}
+
+.orangish-white:hover{
+    background-color: #fde0cd;
+}
+
+.black{
+    background-color: #332f2e;
+    color: #fff;
+}
+
+.black:hover{
+    background-color: #403d3d;
+}
+
+button{
+    border: none;
+    padding: 20px 15px;
+    border-radius: 50%;
+    font-size: large;
+    box-shadow: 0 0 10px 1px #000;
+}
+
+button:hover{
+    cursor: pointer;
+}
